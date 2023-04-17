@@ -5,6 +5,135 @@
         <link rel="stylesheet" href="style.css" />
         <title>Adeline Meistertzheim</title>
     </head>
+    <style>
+        /* Définition des polices personnalisées */
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Eléments principaux de la page */
+
+body
+{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+
+
+/* Header */
+
+header
+{
+    display: flex;
+    flex-direction: row;
+}
+
+header span
+{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#logo img
+{
+    width: 150px;
+    height: auto;
+}
+
+header h1
+{
+    font-family: 'Dayrom', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+    text-align:     center; 
+}
+
+header h2
+{
+    font-family:'Dayrom', serif;
+    font-size: 1em;
+    margin: 0 0 0 10px;
+    font-weight: normal;
+    text-align:     center; 
+}
+
+
+/* Corps */
+
+section
+{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+#exp
+{
+    display: flex;
+    margin-right: 20px;
+    flex-direction: column;
+}
+
+
+
+aside
+{
+    flex: 1.2;
+    position: relative;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    background:   url('images/separateur.png') repeat-x top;
+    padding-top: 25px;
+}
+
+footer p
+{
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+}
+
+footer img
+{
+    width: 20px;
+    height: auto;
+    align-items: center;
+}
+
+
+    </style>
     <body>
         <div id="bloc_page">
             <header>
