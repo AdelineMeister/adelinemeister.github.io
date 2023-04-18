@@ -48,6 +48,8 @@ header span
     background-color: red;
     display: flex;
     flex-direction: column;
+    border: red solid;
+    border-radius: 15px;
 }
 
 #logo
@@ -87,9 +89,14 @@ header h2
 section
 {
     display: flex;
-    margin-bottom: 20px;
-    margin-top: 20px;
     background:   url('images/separateur.png') repeat-x top;
+    
+}
+
+section h1
+{
+    height: 30px;
+    background: url('images/traitrouge.png') repeat-x bottom;
 }
 
 
@@ -100,14 +107,17 @@ section
     flex-direction: column;
 }
 
-
+article
+{
+    margin-left: 20px;
+}
 
 aside
 {
     flex: 1.2;
     position: relative;
-    padding: 10px;
-    font-size: 0.9em;
+    margin-left: 20px;
+    font-size: 1em;
 }
 
 /* Footer */
@@ -117,6 +127,8 @@ footer
     display: flex;
     background:   url('images/separateur.png') repeat-x top;
     padding-top: 25px;
+    align-items: center;
+    justify-content: space-around;
 }
 
 footer p
@@ -128,26 +140,27 @@ footer p
 
 footer img
 {
-    width: 20px;
+    display: flex;
+    width: 50px;
     height: auto;
     align-items: center;
+    background-color: red;
+    border-radius: 5%;
 }
-
-
     </style>
     <body>
         <div id="bloc_page">
             <header>
-                <div id="logo"><img src="Image1.png"/></div>
-                <span id="titre_principale">
+                <div id="logo"><img src="images/Image1.png"/></div>
+                <span>
                     <h1>ADELINE MEISTERTZHEIM</h1>  
                     <h2>FORMATRICE EN INFORMATIQUE | DEVELOPPEUSE D’APPLICATION INFORMATIQUE</h2>
                 </span>
-                <p>                 </p>
             </header> 
             <section>         
                 <aside>
                     <h1>COMPETENCES</h1>
+                    <p>             </p>
                      <ul>
                         <li>
                             Développement : 
@@ -186,6 +199,8 @@ footer img
                             <ul>
                                 <li>Code ::Blocks</li>
                                 <li>Visual Studio</li>
+                                <li>Visual studio code</li>
+                                <li>Eclipse</li>
                             </ul>
                         </li>
                         <li>
@@ -199,7 +214,7 @@ footer img
                                 <li>Gimp</li>
                             </ul>
                         </li>
-                        <li>Github : https://github.com/AdelineMeister</li>
+                        <li><a href="https://github.com/AdelineMeister">Mon Github</a></li>
                     </ul>
                 </aside>
                 <div id="exp">
@@ -241,17 +256,18 @@ footer img
                 </div>
             </section>
             <footer>
-               <p id="mail"> 
-                <img src="Image2.png"/>
-                 adeline.meistertzheim@sfr.fr 
-                </p>
-                <p>
-                    <img src="Image3.png"/>
+               <figure>
+                <img src="images/Image2.png"/>
+                    adeline.meistertzheim@sfr.fr
+               </figure> 
+                <figure>
+                    <img src="images/Image3.png"/>
                     06 17 29 36 23
-                </p>
-               <p>
-                <a href="https://linkedin.com/in/adeline-meistertzheim-4313a8157"><img src="Image4.png"/></a>
-                </p>
+                </figure>
+               <figure>
+                <a href="https://linkedin.com/in/adeline-meistertzheim-4313a8157"><img src="images/Image4.png"/></a>
+                Ma page Linkendin
+               </figure>
             </footer>
         </div>
     </body>
